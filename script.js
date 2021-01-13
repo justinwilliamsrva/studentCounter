@@ -41,9 +41,9 @@ class Student{
     down() { if (this.count != 0) this.count--;this.numberName.innerHTML = this.count}
 }
 
-let lindsay = new Student(0,"numberl");
-let kate = new Student(0,"number");
-let kimberly = new Student(0,"numberk");
+let lindsay = new Student(0,"lindsay");
+let kate = new Student(0,"kate");
+let kimberly = new Student(0,"kimberly");
 
 
 
