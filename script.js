@@ -46,11 +46,8 @@ class Student {
     }
 }
 
-let lindsay = new Student(0, "lindsay");
-// let kate = new Student(0,"kate");
-// let kimberly = new Student(0,"kimberly");
 
-let newMan = ["apple", "pear"];
+let newMan = [];
 let students = ["kimberly", "kate", "lindsay"];
 
 function newStudent() {
