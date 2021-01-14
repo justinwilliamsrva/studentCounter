@@ -42,11 +42,28 @@ class Student{
 }
 
 let lindsay = new Student(0,"lindsay");
-let kate = new Student(0,"kate");
-let kimberly = new Student(0,"kimberly");
+// let kate = new Student(0,"kate");
+// let kimberly = new Student(0,"kimberly");
+
+
+let newMan = ["apple", "pear"];
+let students = ["kimberly","kate"]
+
+function newStudent(){
+//     let i = 0;
+//     let x = 2;
+
+//     newMan[i] = new Student(0, student)
+//  newMan[x] = new Student(0,game)
+
+    for (let i = 0; i < students.length; i++)
+
+        newMan[i] = new Student(0,students[i])
 
 
 
+}
 
+newStudent();
 
 
