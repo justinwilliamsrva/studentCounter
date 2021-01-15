@@ -1,47 +1,22 @@
-// var number = document.getElementById("number");
-// var numberk = document.getElementById("numberk");
-// var numberl = document.getElementById("numberl");
-
-// let count = 0;
-// let countk = 0;
-// let countl = 0;
-
-// var up = document.getElementById("up");
-// var down = document.getElementById("down");
-// var upk = document.getElementById("upk");
-// var downk = document.getElementById("downk");
-// var upl = document.getElementById("upl");
-// var downl = document.getElementById("downl");
-// function counting() {
-//     count++;
-//     number.innerHTML = count;
-// }
-// function countingDown() {
-//     if (count == 0) {
-//         return;
-//     } else {
-//         count--;
-//         number.innerHTML = count;
-//     }
-// }
-
-// up.addEventListener("click", counting);
-// down.addEventListener("click", countingDown);
-
-// number.innerHTML = count;
 
 class Student {
     constructor(count, numberName) {
-        this.count = count;
+
+        this.name = numberName
         this.numberName = document.getElementById(numberName);
+        this.count = localStorage.getItem(this.name) || count;
+        
+
     }
 
     up() {
         this.count++;
+        localStorage.setItem(this.name, this.count);
         this.numberName.innerHTML = this.count;
     }
     down() {
         if (this.count != 0) this.count--;
+        localStorage.setItem(this.name, this.count);
         this.numberName.innerHTML = this.count;
     }
 }
