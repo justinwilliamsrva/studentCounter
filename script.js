@@ -5,9 +5,13 @@ class Student {
         this.name = numberName
         this.numberName = document.getElementById(numberName);
         this.count = localStorage.getItem(this.name) || count;
-        
+
 
     }
+
+    show() {
+        this.numberName.innerHTML = this.count;
+}
 
     up() {
         this.count++;
@@ -20,6 +24,9 @@ class Student {
         this.numberName.innerHTML = this.count;
     }
 }
+
+
+
 
 
 let newMan = [];
@@ -59,3 +66,5 @@ function newStudent() {
     }
 }
 newStudent();
+
+newMan.map(item => item.show());
